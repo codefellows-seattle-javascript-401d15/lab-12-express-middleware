@@ -8,29 +8,15 @@
   * submit a pull request to this repository
   * submit a link to your PR in canvas
   * write a question and observation on canvas
+ 
+# Directions (BONUS LAB FOR 401d15)
+* Using the same code base from Lab11, implement pagenation functionality for your `/api/<model>` GET route, which currently returns a list of all ids. 
+* When a request is made to that endpoint, return five (5) results with an additional key value pairing that, when a 
+* Hint: we reviewed that a linked list data structure might be useful for this use case. subsequent request is made to, will return the next five (5) results, and so on. 
 
-# Build Tool Instructions
-* create a package.json that lists all dependencies and developer dependencies
-* include an .eslintrc
-* include a .gitignore
-* include a readme with a project description
-  * how to install
-  * how to start the server
-  * document the routes
-* include any necessary NPM scripts
- * have a lint script for running eslint
- * have a test script for running mocha
- * have a default script for running the lint and mocha tasks
+# Test your code!
+* Hint: you will want to set up a test that will 'seed' the data layer with many records.
 
-
-# Directions
-* refactor your routes so that requests use parameters instead of query strings
-* refactor your app so the error-handling middleware is its own module
-
-
-# Test
-* `GET` - request no longer have 400 test
-* `PUT and POST` - test 400 for bad json  
-* `DELETE` - test 404, for a DELETE request with an invalid or missing id
- * 404 for missing id because `DELETE /api/<simple-resource-name>/` is not a route
-* `DELETE` - test 204, with an empty response body for DELETE request with a valid id
+# Rubric
+* MVP: 3pts
+* Tests: 2pts
